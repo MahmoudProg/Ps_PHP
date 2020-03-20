@@ -1,0 +1,96 @@
+* {
+  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+
+}
+body, html {
+  margin: 0%;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.bg-image {
+  background-image:url(../assets/bg4.jpg);
+
+
+  /* Add the blur effect */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity/see-through */
+  color: white;
+  border-radius: 3%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80mm;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 00px 10px 2px rgb(19, 1, 51);
+
+}
+
+
+input[type=text], input[type=password]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(14, 18, 31);
+  box-sizing: border-box;
+  background-color: rgb(14, 18, 31);
+  color: white;
+}
+#avatora {
+  display: block;
+  border-radius: 50%;
+     margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+width: 40%;
+}
+  label{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #btn {
+  background-color:rgb(30, 79, 119);
+  border-radius: 3%;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 20%; */
+  left: 50%;
+}
+
+#btn:hover {
+  opacity: 0.8;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
